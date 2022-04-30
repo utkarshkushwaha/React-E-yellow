@@ -1,0 +1,17 @@
+.customsearch {
+    background: #fff;
+}
+
+.customsearch__container {
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+
+.customsearch__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+}
