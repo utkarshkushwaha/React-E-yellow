@@ -6,12 +6,14 @@ import './Search.css';
 
 export const Search = () => {
   return (
-      <div className='search'>
+      <div className='searchpage'>
         <Navbar />
-        <div className='search_container'>
+        <div className='searchpage_container'>
             < CustomSearch />
         </div>
-        <Footer />
+        <div className='home_footer'>
+          <Footer />
+        </div>
       </div>
   )
 }

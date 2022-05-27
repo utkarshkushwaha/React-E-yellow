@@ -1,0 +1,54 @@
+[
+    {
+        "job": "Electrician",
+        "locality": "Shivaji Park",
+        "name": "Sohail",
+        "contact": "8606444785"
+    },{
+        "job": "Electrician",
+        "locality": "Vyankatesh Nagar",
+        "name": "Abhinav",
+        "contact": "8606444785"
+    },{
+        "job": "Electrician",
+        "locality": "Nath Plaza",
+        "name": "Bhanupriya",
+        "contact": "8606444785"
+    },{
+        "job": "Electrician",
+        "locality": "Avanti Nagar",
+        "name": "Geetanjali",
+        "contact": "8606444785"
+    },{
+        "job": "Electrician",
+        "locality": "Chatte Gaali",
+        "name": "Aditi",
+        "contact": "8606444785"
+    },{
+        "job": "Electrician",
+        "locality": "Chatte Gaali",
+        "name": "Chitranjan",
+        "contact": "9406444785"
+    },{
+        "job": "Electrician",
+        "locality": "Avanti Nagar",
+        "name": "Kusum",
+        "contact": "9741444785"
+    },{
+        "job": "Electrician",
+        "locality": "Nath Plaza",
+        "name": "Arjun",
+        "contact": "9316495785"
+    },{
+        "job": "Electrician",
+        "locality": "Vyankatesh Nagar",
+        "name": "Binita",
+        "contact": "9206474785"
+    },{
+        "job": "Electrician",
+        "locality": "Shivaji Park",
+        "name": "Rohit",
+        "contact": "8606444785"
+    }
+    
+]

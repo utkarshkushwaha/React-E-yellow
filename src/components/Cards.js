@@ -11,35 +11,35 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img1.jpg'
-              text='Car Repairs & sevices'
-              label='Nakoda Motors'
-              path='/nakoda-motors'
+              text='Car Ac Repairs, Spare Parts & Accessories, Battery Dealers'
+              label='Mechanic'
+              path='/mechanic'
             />
             <CardItem
               src='images/img2.jpg'
-              text='Enjoy fresh & delicious Fruits Now. Order Online!'
-              label='Delicious Fruits World'
-              path='/delicious-fruits-world'
+              text='Enjoy fresh & delicious Vegetables. Order Online!'
+              label='Vegetable Vendor'
+              path='/vegetable_vendor'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/img3.jpg'
-              text='Beaty Parlours, Bridal Makeup, Hair Stylists'
-              label='Rejoice Beaty Saloon'
-              path='/rejoice-beaty-saloon'
+              text=' Plumbing, Sanitaryware & Bathroom Acc, '
+              label='Plumber'
+              path='/plumber'
             />
             <CardItem
               src='images/img4.jpg'
-              text='A lot can happen over Coffee!'
-              label='Cafe Coffee Day'
-              path='/cafe-coffee-day'
+              text='Electrical Suppliers, Electrical Contractors & Electronics Repair'
+              label='Electrician'
+              path='/electrician'
             />
             <CardItem
               src='images/img5.jpg'
-              text='From fresh fruits, vegetables to dairy, cereals & spices, we have the entire gamut of your grocery needs covered.'
-              label='Royal Kirana Store'
-              path='/royal-kirana-store'
+              text='Food & Beverages, Food Stores, Groceries'
+              label='Kirana Store'
+              path='/kirana-store'
             />
           </ul>
         </div>

@@ -1,0 +1,50 @@
+[
+    {
+        "job": "Mechanic",
+        "locality": "Shahupuri",
+        "name": "Rajesh",
+        "contact": "9062935960"
+    },
+    {
+        "job": "Mechanic",
+        "locality": "Rajwada",
+        "name": "Ruturaj",
+        "contact": "9556067857"
+    },
+    {
+        "job": "Mechanic",
+        "locality": "Shahunagar",
+        "name": "Saurabh",
+        "contact": "9531430618"
+    },
+    {
+        "job": "Mechanic",
+        "locality": "Kondave",
+        "name": "Ganesh",
+        "contact": "9999337901"
+    },
+    {
+        "job": "Mechanic",
+        "locality": "Radhika Nagar",
+        "name": "Tejas",
+        "contact": "9630111235"
+    },
+    {
+        "job": "Mechanic",
+        "locality": "Vidya Nagar",
+        "name": "Suraj",
+        "contact": "9015734262"
+    },
+    {
+        "job": "Mechanic",
+        "locality": "Old MIDC",
+        "name": "Sujeet",
+        "contact": "9391963883"
+    },
+    {
+        "job": "Mechanic",
+        "locality": "Karanje",
+        "name": "Yogesh",
+        "contact": "9391963883"
+    }
+]

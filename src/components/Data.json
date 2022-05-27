@@ -1,122 +1,284 @@
 [
     {
-        "link": "/mechanic",
-        "title": "Mechanic"
+        "job": "Vegetable Vendor",
+        "locality": "BST ground",
+        "name": "Hari",
+        "contact": "8600144785"
     },
     {
-        "link": "/engineer",
-        "title": "Engineer"
+        "job": "Vegetable Vendor",
+        "locality": "Shendre",
+        "name": "Sushant",
+        "contact": "9384503032"
     },
     {
-        "link": "/electrician",
-        "title": "Electrician"
+        "job": "Vegetable Vendor",
+        "locality": "Wadhe",
+        "name": "Bhushan",
+        "contact": "9927954355"
     },
     {
-        "link": "/electronics",
-        "title": "Electronics"
+        "job": "Vegetable Vendor",
+        "locality": "Patkhal",
+        "name": "Abhishek",
+        "contact": "9529048428"
     },
     {
-        "link": "/hotels",
-        "title": "Hotels"
+        "job": "Vegetable Vendor",
+        "locality": "Mhasave",
+        "name": "Rahul",
+        "contact": "9687314404"
     },
     {
-        "link": "/guest-houses",
-        "title": "Guest Houses"
+        "job": "Vegetable Vendor",
+        "locality": "Karandi",
+        "name": "Aman",
+        "contact": "9943020019"
     },
     {
-        "link": "/mens-hostels",
-        "title": "Mens Hostels"
+        "job": "Vegetable Vendor",
+        "locality": "Saidapur",
+        "name": "Pankaj",
+        "contact": "9326781228"
     },
     {
-        "link": "/womens-hostels",
-        "title": "Womens Hostels"
+        "job": "Vegetable Vendor",
+        "locality": "Aditya Nagar",
+        "name": "Omkar",
+        "contact": "9031907473"
     },
     {
-        "link": "/apparels-accessories",
-        "title": "Apparels & Accessories"
+        "job": "Vegetable Vendor",
+        "locality": "Shahunagar",
+        "name": "Raj",
+        "contact": "9752257165"
     },
     {
-        "link": "/accommodation",
-        "title": "Accommodation"
+        "job": "Plumber",
+        "locality": "Vishrambag",
+        "name": "Hari",
+        "contact": "8600144785"
     },
     {
-        "link": "/optics-eyewear",
-        "title": "Optics & Eyewear"
+        "job": "Plumber",
+        "locality": "Government Colony",
+        "name": "Pheri",
+        "contact": "8607244785"
     },
     {
-        "link": "/appartments",
-        "title": "Appartments"
+        "job": "Plumber",
+        "locality": "Simplex",
+        "name": "Spandan",
+        "contact": "8900145485"
     },
     {
-        "link": "/farm-houses",
-        "title": "Farm Houses"
+        "job": "Plumber",
+        "locality": "Teen Taki",
+        "name": "Rajesh",
+        "contact": "9600145685"
     },
     {
-        "link": "/orphanages-shelters",
-        "title": "Orphanages & Shelters"
+        "job": "Plumber",
+        "locality": "Vashi Bridge",
+        "name": "Siddhesh",
+        "contact": "9610145695"
     },
     {
-        "link": "/old-age-homes",
-        "title": "Old Age Homes"
+        "job": "Plumber",
+        "locality": "Simplex",
+        "name": "Prithvi",
+        "contact": "9608155685"
     },
     {
-        "link": "/buisness-hotels",
-        "title": "Buisness Hotels"
+        "job": "Plumber",
+        "locality": "Teen Taki",
+        "name": "Ganesh",
+        "contact": "7600125685"
     },
     {
-        "link": "/embroidery-works",
-        "title": "Embroidery Works"
+        "job": "Plumber",
+        "locality": "Government Colony",
+        "name": "Ramesh",
+        "contact": "9200189685"
     },
     {
-        "link": "/suits-blazers",
-        "title": "Suits & Blazers"
+        "job": "Plumber",
+        "locality": "Vashi Bridge",
+        "name": "Atharv",
+        "contact": "9340105685"
     },
     {
-        "link": "/lifestyle-accessories",
-        "title": "Lifestyle Accessories"
+        "job": "Plumber",
+        "locality": "Simplex",
+        "name": "Mahesh",
+        "contact": "9680135678"
     },
     {
-        "link": "/uniforms",
-        "title": "Uniforms"
+        "job": "Plumber",
+        "locality": "Vishrambag",
+        "name": "Suresh",
+        "contact": "9626195685"
     },
     {
-        "link": "/fashion-designers",
-        "title": "Fashion Designers"
+        "job": "Mechanic",
+        "locality": "Shahupuri",
+        "name": "Rajesh",
+        "contact": "9062935960"
     },
     {
-        "link": "/hospitals",
-        "title": "Hospitals"
+        "job": "Mechanic",
+        "locality": "Rajwada",
+        "name": "Ruturaj",
+        "contact": "9556067857"
     },
     {
-        "link": "/general-hospitals",
-        "title": "General Hospitals"
+        "job": "Mechanic",
+        "locality": "Shahunagar",
+        "name": "Saurabh",
+        "contact": "9531430618"
     },
     {
-        "link": "/childrens-hospitals",
-        "title": "Children's Hospitals"
+        "job": "Mechanic",
+        "locality": "Kondave",
+        "name": "Ganesh",
+        "contact": "9999337901"
     },
     {
-        "link": "/talors-designers",
-        "title": "Talors & Designers"
+        "job": "Mechanic",
+        "locality": "Radhika Nagar",
+        "name": "Tejas",
+        "contact": "9630111235"
     },
     {
-        "link": "/spiritual-pooja-accessories",
-        "title": "Spiritual & Pooja Accessories"
+        "job": "Mechanic",
+        "locality": "Vidya Nagar",
+        "name": "Suraj",
+        "contact": "9015734262"
     },
     {
-        "link": "/jeans",
-        "title": "Jeans"
+        "job": "Mechanic",
+        "locality": "Old MIDC",
+        "name": "Sujeet",
+        "contact": "9391963883"
     },
     {
-        "link": "/bakeries",
-        "title": "Bakeries"
+        "job": "Mechanic",
+        "locality": "Karanje",
+        "name": "Yogesh",
+        "contact": "9391963883"
     },
     {
-        "link": "/maternity-hospitals",
-        "title": "Maternity Hospitals"
+        "job": "General Store",
+        "locality": "Mahavir Chowk",
+        "name": "Naseer",
+        "contact": "8750144785"
     },
     {
-        "link": "/cloud-software",
-        "title": "Cloud Software"
+        "job": "General Store",
+        "locality": "Naringe Nagar",
+        "name": "Prerna",
+        "contact": "8800144785"
+    },
+    {
+        "job": "General Store",
+        "locality": "MIDC",
+        "name": "Ganesh",
+        "contact": "9420141185"
+    },
+    {
+        "job": "General Store",
+        "locality": "Railway Station",
+        "name": "Sharad",
+        "contact": "7530144785"
+    },
+    {
+        "job": "General Store",
+        "locality": "Bus Stand",
+        "name": "Leela",
+        "contact": "8611334785"
+    },
+    {
+        "job": "General Store",
+        "locality": "MIDC",
+        "name": "Nitin",
+        "contact": "8600454777"
+    },
+    {
+        "job": "General Store",
+        "locality": "Naringe Nagar",
+        "name": "Raghavan",
+        "contact": "7845144785"
+    },
+    {
+        "job": "General Store",
+        "locality": "Mahavir Chowk",
+        "name": "Mustafa",
+        "contact": "9870014785"
+    },
+    {
+        "job": "Electrician ",
+        "locality": "Patel Nagar",
+        "name": "Pareek",
+        "contact": "8600144785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Shivaji Park",
+        "name": "Sohail",
+        "contact": "8606444785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Vyankatesh Nagar",
+        "name": "Abhinav",
+        "contact": "8606444785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Nath Plaza",
+        "name": "Bhanupriya",
+        "contact": "8606444785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Avanti Nagar",
+        "name": "Geetanjali",
+        "contact": "8606444785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Chatte Gaali",
+        "name": "Aditi",
+        "contact": "8606444785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Chatte Gaali",
+        "name": "Chitranjan",
+        "contact": "9406444785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Avanti Nagar",
+        "name": "Kusum",
+        "contact": "9741444785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Nath Plaza",
+        "name": "Arjun",
+        "contact": "9316495785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Vyankatesh Nagar",
+        "name": "Binita",
+        "contact": "9206474785"
+    },
+    {
+        "job": "Electrician",
+        "locality": "Shivaji Park",
+        "name": "Rohit",
+        "contact": "8606444785"
     }
 ]

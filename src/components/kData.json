@@ -1,0 +1,50 @@
+[
+    {
+        "job": "General Store",
+        "locality": "Mahavir Chowk",
+        "name": "Naseer",
+        "contact": "8750144785"
+    },
+    {
+        "job": "General Store",
+        "locality": "Naringe Nagar",
+        "name": "Prerna",
+        "contact": "8800144785"
+    },
+    {
+        "job": "General Store",
+        "locality": "MIDC",
+        "name": "Ganesh",
+        "contact": "9420141185"
+    },
+    {
+        "job": "General Store",
+        "locality": "Railway Station",
+        "name": "Sharad",
+        "contact": "7530144785"
+    },
+    {
+        "job": "General Store",
+        "locality": "Bus Stand",
+        "name": "Leela",
+        "contact": "8611334785"
+    },
+    {
+        "job": "General Store",
+        "locality": "MIDC",
+        "name": "Nitin",
+        "contact": "8600454777"
+    },
+    {
+        "job": "General Store",
+        "locality": "Naringe Nagar",
+        "name": "Raghavan",
+        "contact": "7845144785"
+    },
+    {
+        "job": "General Store",
+        "locality": "Mahavir Chowk",
+        "name": "Mustafa",
+        "contact": "9870014785"
+    }
+]

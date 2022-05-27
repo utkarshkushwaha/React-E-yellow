@@ -2,23 +2,13 @@ import React from 'react'
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Button.css';
+import Data from "../components/Data.json";
 function CustomSearch() {
-    const [userData,setUserData]=React.useState([]);
-    const [userSearchData,setUserSearchData]=React.useState([]);
+    const [userData,setUserData]=React.useState(Data);
+    const [userSearchData,setUserSearchData]=React.useState(Data);
     const [job,setJob]=React.useState('');
     const [locality,setLocality]=React.useState('');
-      React.useEffect(()=>{
-          const data=[
-              {job:"Plumber",locality:"Vishrambag",name:"Hari",contact:"8600144785"},
-              {job:"Plumber",locality:"Government Colony",name:"Pheri",contact:"8600144785"},  
-              {job:"Electrician ",locality:"Patel Nagar",name:"Pareek",contact:"8600144785"},
-              {job:"Taxi Driver",locality:"Dwarka chowk",name:"Nana",contact:"8600144785"},
-              {job:"Vegetable Vendor",locality:"BST ground",name:"Hari",contact:"8600144785"},
-          ];
-
-          setUserData(data);
-          setUserSearchData(data);
-      },[])
+      
 
       const handleSearch=()=>{
           const newData=userData.
@@ -26,22 +16,16 @@ function CustomSearch() {
           .filter(y =>y.locality == (locality==''?y.locality:locality));
           setUserSearchData(newData);
       }
-      return <div>
+      return <div className='Custom_Search_Container'>
           <Table>
               <tr>
                   <td>
                       <input className="from-control" type='text' placeholder='Enter Job...' onChange={(e)=>setJob(e.target.value)}/>
                   </td>
                   <td>
-                      <select className="from-control" onChange={(e)=>setLocality(e.target.value)}>
-                          <option value=''>select</option>
-                          <option value='Vishrambag'>Vishrambag</option>
-                          <option value='Government Colony'>Government Colony</option>
-                          <option value='Patel Nagar'>Patel Nagar</option>
-                          <option value='Dwarka chowk'>Dwarka chowk</option>
-                          <option value='BST ground'>BST ground</option>
-                      </select>
+                      <input className="from-control" type='text' placeholder='Enter Locality...' onChange={(e) => setLocality(e.target.value)} />
                   </td>
+                  
                   <td>
                       <button className="btn btn--primary" onClick={()=>handleSearch()}>Search</button>
                   </td>

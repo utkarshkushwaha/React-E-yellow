@@ -1,0 +1,50 @@
+[
+    {
+        "job": "Vegetable Vendor",
+        "locality": "Shendre",
+        "name": "Sushant",
+        "contact": "9384503032"
+    },
+    {
+        "job": "Vegetable Vendor",
+        "locality": "Wadhe",
+        "name": "Bhushan",
+        "contact": "9927954355"
+    },
+    {
+        "job": "Vegetable Vendor",
+        "locality": "Patkhal",
+        "name": "Abhishek",
+        "contact": "9529048428"
+    },
+    {
+        "job": "Vegetable Vendor",
+        "locality": "Mhasave",
+        "name": "Rahul",
+        "contact": "9687314404"
+    },
+    {
+        "job": "Vegetable Vendor",
+        "locality": "Karandi",
+        "name": "Aman",
+        "contact": "9943020019"
+    },
+    {
+        "job": "Vegetable Vendor",
+        "locality": "Saidapur",
+        "name": "Pankaj",
+        "contact": "9326781228"
+    },
+    {
+        "job": "Vegetable Vendor",
+        "locality": "Aditya Nagar",
+        "name": "Omkar",
+        "contact": "9031907473"
+    },
+    {
+        "job": "Vegetable Vendor",
+        "locality": "Shahunagar",
+        "name": "Raj",
+        "contact": "9752257165"
+    }
+]
