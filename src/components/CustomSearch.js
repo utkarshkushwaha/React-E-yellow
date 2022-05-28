@@ -1,15 +1,65 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Button.css';
 import Data from "../components/Data.json";
+import { firebaseRT } from '../fire';
+
+
+// componentDidMount() {
+//     const accountRef =  firebase.database().ref('accounts');
+//     accountRef.on('value', (snapshot) => {
+//       let accounts = snapshot.val();
+//       let newState = [];
+//       for (let account in accounts) {
+//         newState.push({
+//           id:account,
+//           account: accounts[account].account,
+//           title: accounts[account].title,
+          
+//         })
+//       }
+//       this.setState({
+//         accounts:newState,
+//       })
+//     })
+//     const userRef = firebase.database().ref('users');
+//     userRef.on('value', (snapshot) => {
+//       let users =  snapshot.val();
+//       let newUserState = [];
+//       for (let data in users) {
+//         newUserState.push({
+//           id:data,
+//           account:users[data].account,
+//           name: users[data].name,
+//         })
+//         console.log(data)
+//       }
+//     })
+//   }
+
+
 function CustomSearch() {
-    const [userData,setUserData]=React.useState(Data);
-    const [userSearchData,setUserSearchData]=React.useState(Data);
+    const [userData,setUserData]=React.useState([]);
+    const [userSearchData,setUserSearchData]=React.useState([]);
     const [job,setJob]=React.useState('');
     const [locality,setLocality]=React.useState('');
-      
-
+    const [data,setData]=useState([]);
+    useEffect(async()=>{
+        const accountRef =  firebaseRT.databse().ref('businesses');
+        accountRef.on('value', (snapshot) => {
+        let accounts = snapshot.val();
+        let newState = [];
+        for (let account in accounts) {
+            newState.push({
+            account
+            
+            })
+        }
+        setData(newState)
+        console.log("fuck you",data)
+    })
+    },[])
       const handleSearch=()=>{
           const newData=userData.
           filter(x=>x.job== (job==''?x.job:job))
