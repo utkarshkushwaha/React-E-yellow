@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Button.css';
 import Data from "../components/Data.json";
 import { firebaseRT } from '../fire';
+import fire from '../fire';
+import {getDatabase,ref,onValue} from 'firebase/database';
 
 
 // componentDidMount() {
@@ -40,32 +42,60 @@ import { firebaseRT } from '../fire';
 
 
 function CustomSearch() {
+const db=getDatabase();
+
     const [userData,setUserData]=React.useState([]);
     const [userSearchData,setUserSearchData]=React.useState([]);
     const [job,setJob]=React.useState('');
     const [locality,setLocality]=React.useState('');
-    const [data,setData]=useState([]);
-    useEffect(async()=>{
-        const accountRef =  firebaseRT.databse().ref('businesses');
-        accountRef.on('value', (snapshot) => {
-        let accounts = snapshot.val();
-        let newState = [];
-        for (let account in accounts) {
-            newState.push({
-            account
+    // const [tableData,setTableData]=useState([]);
+    // useEffect(async()=>{
+    //     const accountRef =  firebaseRT.databse().ref('businesses');
+    //     accountRef.on('value', (snapshot) => {
+    //     let accounts = snapshot.val();
+    //     let newState = [];
+    //     for (let account in accounts) {
+    //         newState.push({
+    //         account
             
-            })
-        }
-        setData(newState)
-        console.log("fuck you",data)
-    })
-    },[])
-      const handleSearch=()=>{
-          const newData=userData.
-          filter(x=>x.job== (job==''?x.job:job))
-          .filter(y =>y.locality == (locality==''?y.locality:locality));
-          setUserSearchData(newData);
+    //         })
+    //     }
+    //     setData(newState)
+    //     console.log("fuck you",data)
+    // })
+    // },[])
+
+
+    //   const handleSearch=()=>{
+    //       const newData=userData.
+    //       filter(x=>x.job== (job==''?x.job:job))
+    //       .filter(y =>y.locality == (locality==''?y.locality:locality));
+    //       setUserSearchData(newData);
+    //   }
+
+
+      const componentDisMount = () => {
+          let category=job;
+          const dbref=ref(db,category);
+          onValue(dbref,(snapshot)=>{
+              let records = [];
+              snapshot.forEach(childSnapshot=>{
+                  let keyName = childSnapshot.key
+                  let data= childSnapshot.val();
+                  records.push({"key":keyName,"data":data});
+              });
+              console.log(records);
+              setUserSearchData(records);
+          });
       }
+
+    //   const retrieveData = () =>{
+    //       const url="https://e-yellow-default-rtdb.firebaseio.com/"+job+".json";
+    //       let records={};
+    //       curl 'https://e-yellow-default-rtdb.firebaseio.com/'+job+'.json';
+    //   }
+
+
       return <div className='Custom_Search_Container'>
           <Table>
               <tr>
@@ -77,7 +107,7 @@ function CustomSearch() {
                   </td>
                   
                   <td>
-                      <button className="btn btn--primary" onClick={()=>handleSearch()}>Search</button>
+                      <button className="btn btn--primary" onClick={()=>componentDisMount()}>Search</button>
                   </td>
               </tr>
           </Table>
@@ -93,14 +123,18 @@ function CustomSearch() {
               <tbody>
                   {
                       userSearchData&&userSearchData.length>0 ?
-                      userSearchData.map(item=>
+                      this.state.userSearchData.map((row,index)=>{
+                          return (
                           <tr>
-                              <td>{item.job}</td>
-                              <td>{item.locality}</td>
-                              <td>{item.name}</td>
-                              <td>{item.contact}</td>
-                          </tr>    
-                      )
+                              <td>{index}</td>
+                              <td>{row.key}</td>
+                              <td>{row.data.category}</td>
+                              <td>{row.data.name}</td>
+                              <td>{row.data.locality}</td>
+                              <td>{row.data.mobno}</td>
+                          </tr>   
+                          ) 
+                        })
                       :'No Data'
                   }
               </tbody>
