@@ -86,6 +86,7 @@ const db=getDatabase();
               });
               console.log(records);
               setUserSearchData(records);
+              console.log(userSearchData);
           });
       }
 

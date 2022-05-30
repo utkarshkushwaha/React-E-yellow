@@ -9,7 +9,7 @@ import Search from "./components/Search";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import TOS from "./components/TOS";
-import AddBusiness from "./components/addBusiness";
+import BusinessAdd from "./components/BusinessAdd";
 import wrappermsearch from "./components/wrappermsearch";
 import wrapperpsearch from "./components/wrapperpsearch";
 import wrappervsearch from "./components/wrappervsearch";
@@ -31,7 +31,7 @@ function App() {
         <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={ContactUs} />
         <Route path="/tos" component={TOS} />
-        <Route path="/add-business" component={AddBusiness} />
+        <Route path="/add-business" component={BusinessAdd} />
         <Route path="/mechanic" component={wrappermsearch} />
         <Route path="/plumber" component={wrapperpsearch} />
         <Route path="/vegetable_vendor" component={wrappervsearch} />
