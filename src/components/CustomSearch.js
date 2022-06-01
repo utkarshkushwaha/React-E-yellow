@@ -48,23 +48,16 @@ const db=getDatabase();
     const [userSearchData,setUserSearchData]=React.useState([]);
     const [job,setJob]=React.useState('');
     const [locality,setLocality]=React.useState('');
+    const [isloading, setisloading] = React.useState(true);
     // const [tableData,setTableData]=useState([]);
-    // useEffect(async()=>{
-    //     const accountRef =  firebaseRT.databse().ref('businesses');
-    //     accountRef.on('value', (snapshot) => {
-    //     let accounts = snapshot.val();
-    //     let newState = [];
-    //     for (let account in accounts) {
-    //         newState.push({
-    //         account
-            
-    //         })
-    //     }
-    //     setData(newState)
-    //     console.log("fuck you",data)
-    // })
-    // },[])
+    // useEffect(()=>{
+    //     componentDisMount()
+    //     setisloading(false)
+    //  },[])
+    useEffect(() => {
+        console.log(userSearchData)
 
+    }, [isloading])
 
     //   const handleSearch=()=>{
     //       const newData=userData.
@@ -86,7 +79,8 @@ const db=getDatabase();
               });
               console.log(records);
               setUserSearchData(records);
-              console.log(userSearchData);
+              //console.log(userSearchData);
+              setisloading(false)
           });
       }
 
@@ -124,14 +118,12 @@ const db=getDatabase();
               <tbody>
                   {
                       userSearchData&&userSearchData.length>0 ?
-                      this.state.userSearchData.map((row,index)=>{
+                      userSearchData.map((row,index)=>{
                           return (
                           <tr>
-                              <td>{index}</td>
-                              <td>{row.key}</td>
                               <td>{row.data.category}</td>
-                              <td>{row.data.name}</td>
                               <td>{row.data.locality}</td>
+                              <td>{row.data.name}</td>
                               <td>{row.data.mobno}</td>
                           </tr>   
                           ) 
