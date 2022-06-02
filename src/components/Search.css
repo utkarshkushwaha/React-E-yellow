@@ -1,17 +1,17 @@
 .searchpage {
     background: #fff;
 }
-.searchpage_container {
+.searchp_container {
     flex-flow: column;
     align-items: center;
     max-width: 1120px;
     width: 100%;
-    height: 400px;
+    height: 250px;
     margin: 0 auto;
-    margin-top: 1000px;
+    margin-top: 150px;
 }
-.home_footer {
-    margin-top: 900px;
+.searchp_footer {
+    margin-top: 100px;
 }
 .search {
     background: #fff;

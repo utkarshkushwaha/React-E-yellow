@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const AddBusiness = () => {
+
+let history =useHistory();
 
     const [details,setDetails]=useState({
         category: '',
@@ -40,6 +43,7 @@ const AddBusiness = () => {
                 mobno,
             })
         })
+        history.push("/search");
     }
 
   return (

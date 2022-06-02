@@ -4,6 +4,11 @@ import Footer from './Footer';
 import HeroSection from './HeroSection';
 
 const Homepage = () => {
+
+  // const {
+  //   user
+  // } = props; 
+
   return (
     <>
       <HeroSection />

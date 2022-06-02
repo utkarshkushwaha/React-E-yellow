@@ -8,10 +8,10 @@ export const Search = () => {
   return (
       <div className='searchpage'>
         <Navbar />
-        <div className='searchpage_container'>
+        <div className='searchp_container'>
             < CustomSearch />
         </div>
-        <div className='home_footer'>
+        <div className='searchp_footer'>
           <Footer />
         </div>
       </div>

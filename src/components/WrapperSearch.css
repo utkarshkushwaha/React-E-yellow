@@ -11,3 +11,26 @@
     margin: 0 auto;
     margin-top: 150px;
 }
+
+.searchpage {
+    background: #fff;
+}
+
+
+.search_footer {
+    margin-top: 75px;
+}
+
+.search {
+    background: #fff;
+}
+
+.search_container {
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 700px;
+}

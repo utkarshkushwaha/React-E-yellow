@@ -2,7 +2,7 @@ import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Login from "./components/login.component";
+import Login from "./components/login1";
 import SignUp from "./components/signup.component";
 import Homepage  from "./components/homepage";
 import Search from "./components/Search";
@@ -23,7 +23,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={Login} />
             <Route path="/sign-in" component={Login} />
-            <Route path="/sign-up" component={SignUp} />
+            <Route path="/sign-up" component={Login} />
           </Switch>
         </div>
         <Route path="/search" component={Search} />

@@ -41,7 +41,7 @@ export const AboutUs = () => {
                                 helps customers choose your business over your competitors!
                             </p>
                             <p>
-                                Listing on <b>Yellowpages</b> is simple. Click <a href="/add-buisness">here</a> to get listed!
+                                Listing on <b>Yellowpages</b> is simple. Click <a href="/add-business">here</a> to get listed!
                             </p>
                         </div>
                     </section>

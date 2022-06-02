@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link,useHistory } from 'react-router-dom';
 import './Navbar.css';
+import firebase from 'firebase/compat';
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
-
+    let history = useHistory();
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
@@ -16,6 +17,14 @@ function Navbar() {
         } else {
             setButton(true);
         }
+    };
+
+    const handleLogout = () => {
+        firebase.auth().signOut().then(() => {
+            history.push("/sign-in");
+        }).catch((error) => {
+            // An error happened.
+        });
     };
 
     useEffect(() => {
@@ -71,7 +80,7 @@ function Navbar() {
 
                         <li>
                             <Link
-                                to='/sign-in'
+                                
                                 className='nav-links-mobile'
                                 onClick={closeMobileMenu}
                             >
@@ -79,7 +88,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>LOG OUT</Button>}
+                    {button && <Button onClick={handleLogout}  buttonStyle='btn--outline'>LOG OUT</Button>}
                 </div>
             </nav>
         </>

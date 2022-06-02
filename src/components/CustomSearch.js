@@ -56,7 +56,7 @@ const db=getDatabase();
     //  },[])
     useEffect(() => {
         console.log(userSearchData)
-
+        componentDefMount();
     }, [isloading])
 
     //   const handleSearch=()=>{
@@ -84,6 +84,22 @@ const db=getDatabase();
           });
       }
 
+    const componentDefMount = () => {
+        const dbref = ref(db, "businesses");
+        onValue(dbref, (snapshot) => {
+            let records = [];
+            snapshot.forEach(childSnapshot => {
+                let keyName = childSnapshot.key
+                let data = childSnapshot.val();
+                records.push({ "key": keyName, "data": data });
+            });
+            console.log(records);
+            setUserSearchData(records);
+            //console.log(userSearchData);
+            setisloading(false)
+        });
+    }
+
     //   const retrieveData = () =>{
     //       const url="https://e-yellow-default-rtdb.firebaseio.com/"+job+".json";
     //       let records={};
@@ -96,9 +112,6 @@ const db=getDatabase();
               <tr>
                   <td>
                       <input className="from-control" type='text' placeholder='Enter Job...' onChange={(e)=>setJob(e.target.value)}/>
-                  </td>
-                  <td>
-                      <input className="from-control" type='text' placeholder='Enter Locality...' onChange={(e) => setLocality(e.target.value)} />
                   </td>
                   
                   <td>
@@ -128,7 +141,7 @@ const db=getDatabase();
                           </tr>   
                           ) 
                         })
-                      :'No Data'
+                      :'Loading'
                   }
               </tbody>
           </Table>
